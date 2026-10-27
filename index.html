@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Capítulos 🤍</title>
+  <!-- Tipografías elegantes desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Fondo animado con corazones blancos flotantes -->
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <div class="app-container">
+    <!-- Encabezado Principal -->
+    <header class="main-header">
+      <div class="badge-tag">🤍 Un rincón solo para nosotros</div>
+      <h1>Nuestros Capítulos</h1>
+      <p class="subtitle">Cada tres días se abre una nueva carta de mi corazón para ti, mi vida.</p>
+      
+      <!-- Reproductor de Audio -->
+      <div class="audio-control">
+        <button id="musicToggle" class="btn-music">
+          <span id="musicIcon">🎵</span> <span id="musicText">🎵 Reproducir música instrumental</span>
+        </button>
+      </div>
+
+      <!-- Barra de progreso general -->
+      <div class="progress-section">
+        <div class="progress-info">
+          <span>Capítulos desbloqueados: <strong id="unlockedCount">5</strong> de 22</span>
+          <span id="progressPercentage">23%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progressBarFill"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Grid de Capítulos -->
+    <main class="chapters-grid" id="chaptersGrid">
+      <!-- Se cargan dinámicamente mediante JavaScript -->
+    </main>
+
+    <footer class="main-footer">
+      <p>Hecho con todo mi amor para ti, mi vida 🤍</p>
+    </footer>
+  </div>
+
+  <!-- Modal Lector de Capítulo -->
+  <div class="modal-overlay" id="chapterModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-chapter-num" id="modalChapterNum">Capítulo 5</span>
+        <h2 class="modal-title" id="modalTitle">Título del capítulo</h2>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text" id="modalText"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-copy" id="modalCopyBtn">
+          <span>📋 Copiar texto completo</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
